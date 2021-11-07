@@ -1,12 +1,14 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 
+
 const User = (props) => {
     const addUser = props.addUser;
     const { name, email, cell, picture, location } = props.user;
+    
     const userStyle = {
         border: '2px solid black', width: '20%', padding: '10px', margin: '10px', float: 'left', height: '450px'
-    }
+    } 
     return (
         
         <div style={userStyle}>

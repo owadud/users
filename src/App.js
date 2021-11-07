@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
 import User from './Components/User/User'
@@ -30,11 +29,14 @@ function App() {
     setAdd(newAdd);
 
   }
+  
 
   return (
     <div className="App">
+      <Added addUsers={addUsers} ></Added>
+     
 
-      <Added addUsers={addUsers}></Added>
+     
 
       <ul>
         {
@@ -49,6 +51,6 @@ function App() {
 
     </div>
   );
-}
+};
 
 export default App;
